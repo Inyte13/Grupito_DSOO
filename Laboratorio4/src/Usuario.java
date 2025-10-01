@@ -28,10 +28,13 @@ public class Usuario {
   public void setId(String id) {
     this.id = id;
   }
+
   public ArrayList<Libro> getLibrosPrestados() {
     return librosPrestados;
   }
-  public void setLibrosPrestados(ArrayList<Libro> librosPrestados) {
-    this.librosPrestados = librosPrestados;
+
+  public void setLibroPrestado(Libro libro){
+    librosPrestados.add(libro);
   }
+  
 }
